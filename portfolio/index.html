@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="user-scalable=0"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Erin Richards Portfolio</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Indie+Flower&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div id="nav-circle"></div>
+      <div class="nav-wrap">
+          <div id="link-list">
+            <li><a class="link-list" href="#about_me">About Me</a></li>
+            <li><a class="link-list" href="#projects">Projects<a></li>
+            <li><a class="link-list" target="_blank" href="/images/Erin Richards Technical Resume.pdf#toolbar=0">Technical Resume</a></li>
+          </div>
+        </div>
+      <div id="hamburger">
+        <button id="nav-toggle" aria-label="toggle navigation">
+          <span class="hamburger"></span>
+        </button>
+      </div>
+  </header>
+  <main>
+    <div class="main">
+      <div id="landing_image">
+        <div class="mug-container">
+        <img
+          src="/images/landing.mug.png"
+          alt="coffee mug"
+          class="landing-image mug"
+        />
+        <img src="/images/steam.png"class="steam" id="steam1"/>
+        <img src="/images/steam.png"class="steam" id="steam2"/>
+        <img src="/images/steam.png"class="steam" id="steam3"/>
+        <img src="/images/steam.png"class="steam" id="steam4"/>
+      </div>
+        <img
+          src="/images/landing.lamp.png"
+          alt="lamp"
+          class="landing-image lamp"
+        />
+        <img id="headphones"
+          src="/images/landing.headphones.png"
+          alt="headphones"
+          class="landing-image headphones"
+        />
+        <div class="laptop-container">
+        <img
+          src="/images/landing.laptop.png"
+          alt="laptop"
+          class="landing-image laptop"
+        />
+        <img
+          src="/images/bracket-left.png"
+          alt="laptop"
+          class="landing-image laptop brackets bracket-left"
+        />
+        <img
+          src="/images/bracket-right.png"
+          alt="laptop"
+          class="landing-image laptop brackets bracket-right"
+        />
+      </div>
+        </div>
+    </div>
+  </main>
+    <div id="about_me">
+      <div class="hero-blurb info scroll fade-in-bottom">
+        <h1 class="about-me-greeting">Hiya!</h1>
+        <p class="about-me-para">
+          My name is Erin Richards and I'm a front-end web developer with a
+          concerning coffee addiction. I started learning how to code after
+          almost 20 years in the Hospitality industry, looking for a change of
+          pace and a rewarding career. While shaking tins behind the bar can be
+          <b>so much fun</b>, it doesn't always spark joy. Building beautiful
+          websites and useful apps allows me to explore my creativity more fully
+          and challenges me to expand my world-view of whats possible.
+        </p>
+        <p class="about-me-para">
+          I mainly work in HTML/CSS/JavaScript, with a working knowledge of
+          NodeJS, ExpressJS, MongoDB, and Bootstrap.
+        </p>
+        <p class="scroll fade in bottom">
+          Please take a look at my <a href="#projects">projects</a> below or paruse my <a href="/images/Erin Richards Technical Resume.pdf#toolbar=0" target="_blank">Technical Resume</a> for a look at my work.
+        </p>
+      </div>
+      <div class="hero-image info" id="hero-img-el">
+        <div id="hero-img-container">
+        <canvas></canvas>
+        </div>
+      </div>
+    </div>
+    <div id="projects">
+      <div class="left-tile tile scroll">
+          <img src="./images/randomPassGen.png" alt="picture of random password generator project"/>
+          <p class="project-desc">
+            A random password generator using <b>JavaScript</b>, <b>HTML</b>, and simple <b>CSS</b> styling. Made using Scrimba's Frontend Web Developer career course.
+          </p>
+          <div id="button-container">
+            <a class="project-btn" href="https://courageous-cucurucho-c17dce.netlify.app/" target="_blank">Live Demo</a>
+            <a class="project-btn" href="https://github.com/eRichards11/Password-Generator" target="_blank">Code</a>
+          </div>
+      </div>
+      <div class="right-tile-heading scroll">
+        <h4 class="project-heading">Random Password Generator</h4>
+      </div>
+      <div class="left-tile-heading scroll">
+        <h4 class="project-heading">PacMan Game</h4>
+      </div>
+      <div class="right-tile tile scroll">
+        <img src="./images/PacMan.png" alt="picture of PacMan game"/>
+          <p class="project-desc">
+            A simple desktop game of PacMan using <b>JavaScript</b> and <b>HTML</b>'s <b>canvas</b> API. 
+          </p>
+          <div id="button-container">
+            <a class="project-btn" href="https://dreamy-granita-1b9ee0.netlify.app/" target="_blank">Live Demo</a>
+            <a class="project-btn" href="https://github.com/eRichards11/Pac-Man/tree/main/pacman" target="_blank">Code</a>
+          </div>
+        </div>
+          <div class="left-tile tile scroll coming-soon">
+            <img class="coming-soon-banner" src="./images/coming-soon.png"/>
+            <img src="./images/Daniel-Richards-Landing.png" alt="picture of Daniel Richards Website"/>
+            <p class="project-desc">
+              Created a full CMS system from scratch using <b>NodeJS</b>, <b>ExpressJS</b>, and <b>Handlebars</b> template engine with <b>MongoDB</b> used as the data server. Password protected so only those Coach Richards gives access to can view his personalized drills and session plans. The admin area is styled with <b>Bootstrap5</b> while the front end is custom styled using <b>CSS3</b>. Admin section is only accessed by Coach Richards where there is the ability to upload new content, edit existing content, or delete any depreciated sessions.
+            </p>
+            <div id="button-container">
+              <a style="background-color: grey" class="project-btn" href="#" target="_blank">Site</a>
+              <a href="https://youtu.be/BwELj-BvhS0" id="demo-btn" class="project-btn" target="_blank">Demo Video</a>
+              <a class="project-btn" href="https://github.com/eRichards11/Daniel-Richards-Coaching-and-Consulting" target="_blank">Code</a>
+            </div>
+            </div>
+            <div class="right-tile-heading">
+              <h4 class="project-heading">Daniel Richards Professional Coaching Site</h4>
+            </div>
+        </div>
+    </div>
+  </body>
+  <footer>Made with 💖 by Erin Richards<br>
+  Feel free to <a href="mailto:erinmrichards@yahoo.com">email me</a></footer>
+  <script src="index.js"></script>
+</html>
