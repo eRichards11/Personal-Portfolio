@@ -10,10 +10,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Erin Richards Portfolio</title>
     <link rel="stylesheet" href="styles.css"/>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Indie+Flower&family=Satisfy&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -89,7 +88,7 @@
         </p>
         <p class="about-me-para">
           I mainly work in HTML/CSS/JavaScript, with a working knowledge of
-          NodeJS, ExpressJS, MongoDB, and Bootstrap.
+          React, NodeJS, ExpressJS, MongoDB, and Bootstrap.
         </p>
         <p class="scroll fade in bottom">
           Please take a look at my <a href="#projects">projects</a> below or paruse my <a href="/images/Erin Richards Technical Resume.pdf#toolbar=0" target="_blank">Technical Resume</a> for a look at my work.
@@ -102,43 +101,36 @@
       </div>
     </div>
     <div id="projects">
-      <div class="left-tile tile scroll">
+      <div class="left-tile tile">
           <img src="./images/randomPassGen.png" alt="picture of random password generator project"/>
           <p class="project-desc">
             A random password generator using <b>JavaScript</b>, <b>HTML</b>, and simple <b>CSS</b> styling. Made using Scrimba's Frontend Web Developer career course.
           </p>
-          <div id="button-container">
             <a class="project-btn" href="https://courageous-cucurucho-c17dce.netlify.app/" target="_blank">Live Demo</a>
             <a class="project-btn" href="https://github.com/eRichards11/Password-Generator" target="_blank">Code</a>
-          </div>
       </div>
-      <div class="right-tile-heading scroll">
+      <div class="right-tile-heading">
         <h4 class="project-heading">Random Password Generator</h4>
       </div>
-      <div class="left-tile-heading scroll">
+      <div class="left-tile-heading">
         <h4 class="project-heading">PacMan Game</h4>
       </div>
-      <div class="right-tile tile scroll">
+      <div class="right-tile tile">
         <img src="./images/PacMan.png" alt="picture of PacMan game"/>
           <p class="project-desc">
             A simple desktop game of PacMan using <b>JavaScript</b> and <b>HTML</b>'s <b>canvas</b> API. 
           </p>
-          <div id="button-container">
             <a class="project-btn" href="https://dreamy-granita-1b9ee0.netlify.app/" target="_blank">Live Demo</a>
             <a class="project-btn" href="https://github.com/eRichards11/Pac-Man/tree/main/pacman" target="_blank">Code</a>
-          </div>
         </div>
-          <div class="left-tile tile scroll coming-soon">
+          <div class="left-tile tile coming-soon">
             <img class="coming-soon-banner" src="./images/coming-soon.png"/>
             <img src="./images/Daniel-Richards-Landing.png" alt="picture of Daniel Richards Website"/>
             <p class="project-desc">
               Created a full CMS system from scratch using <b>NodeJS</b>, <b>ExpressJS</b>, and <b>Handlebars</b> template engine with <b>MongoDB</b> used as the data server. Password protected so only those Coach Richards gives access to can view his personalized drills and session plans. The admin area is styled with <b>Bootstrap5</b> while the front end is custom styled using <b>CSS3</b>. Admin section is only accessed by Coach Richards where there is the ability to upload new content, edit existing content, or delete any depreciated sessions.
             </p>
-            <div id="button-container">
-              <a style="background-color: grey" class="project-btn" href="#" target="_blank">Site</a>
-              <a href="https://youtu.be/BwELj-BvhS0" id="demo-btn" class="project-btn" target="_blank">Demo Video</a>
-              <a class="project-btn" href="https://github.com/eRichards11/Daniel-Richards-Coaching-and-Consulting" target="_blank">Code</a>
-            </div>
+              <a class="project-btn" href="https://youtu.be/BwELj-BvhS0" id="demo-btn" target="_blank">Demo Video</a>
+              <a class="project-btn" href="https://github.com/eRichards11/Daniel-Richards-Coaching" target="_blank">Code</a>
             </div>
             <div class="right-tile-heading">
               <h4 class="project-heading">Daniel Richards Professional Coaching Site</h4>

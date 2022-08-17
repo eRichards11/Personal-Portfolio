@@ -1,7 +1,7 @@
 html {
     /*background: linear-gradient(180deg, rgb(224, 203, 184), rgb(254, 242, 194));*/
     background-color: #34017a;
-    font-family: "Comfortaa", sans-serif;
+    font-family: 'Comfortaa', 'Roboto', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
   
   body {
@@ -9,6 +9,10 @@ html {
     margin: 0;
   }
   body::-webkit-scrollbar {
+    display: none;
+  }
+
+  body::-webkit-scrollbar-thumb {
     display: none;
   }
 
@@ -188,13 +192,13 @@ html {
   }
 
   #steam2 {
-    -webkit-animation: steam2 8s ease-out 2.2s infinite;
-    animation: steam2 8s ease-out 2.2s infinite;
+    -webkit-animation: steam2 8s ease-out 2.5s infinite;
+    animation: steam2 8s ease-out 2.5s infinite;
   }
 
   #steam4 {
-    -webkit-animation: steam2 8s ease-out 4s infinite;
-    animation: steam2 8s ease-out 4s infinite;
+    -webkit-animation: steam2 8s ease-out 4.2s infinite;
+    animation: steam2 8s ease-out 4.2s infinite;
   }
 
   @keyframes steam2 {
@@ -227,15 +231,6 @@ html {
     -ms-transform-origin: 50% 100%;
     -webkit-transform-origin: 50% 100%;
     visibility: visible !important;
-  }
-
-  #headphone-audio {
-    position: absolute;
-    width: 200px;
-    height: 100px;
-    top: 55%;
-    left: 20%;
-    z-index: 99999;
   }
 
   
@@ -364,11 +359,9 @@ html {
     font-size: 1.2rem;
   }
 
-  #button-container {
-    text-align: center;
-}
   .project-btn {
-    box-shadow: 2px 2px black;
+    font-size: 1.5rem;
+    box-shadow: 2px 2px 8px black;
     border-radius: 5px;
     border: none;
     background-color: #34017a;
@@ -378,10 +371,14 @@ html {
     cursor: pointer;
   }
 
+  .project-btn:visited {
+    color: #FF69B4;
+  }
+
   .tile {
     background-color: #ffba8b;
     border-radius: 20px;
-    padding: 10px;
+    padding: .5em .5em 1.5em .5em;
     margin: 1em;
     max-width: 400px;
     box-shadow: 4px 4px #FF69B4;
@@ -400,9 +397,8 @@ html {
     justify-self: left;
   }
 
-
- .right-tile-heading,
- .left-tile-heading {
+  .right-tile-heading,
+  .left-tile-heading {
     font-size: 2rem;
     color: #02c4ca;
     align-self: center;
@@ -410,11 +406,11 @@ html {
   }
 
   .right-tile-heading {
-text-align: left;
+    text-align: left;
   }
 
   .left-tile-heading {
-text-align: right;
+    text-align: right;
   }
 
   .coming-soon{
@@ -446,57 +442,38 @@ text-align: right;
   }
 
   
-  @media only screen and (max-width: 675px) {
-    #nav-circle {
-      height: 15px;
-      width: 15px;
-    }
-    #nav-toggle {
-      position: absolute;
-      height: 50px;
-      width: 50px;
-      right: .2em;
-      top: 1.6em;
-      padding: .7em;
-    }
-    .nav-wrap {
-      width: 15em;
-      height: 15em;
-    }
-    #link-list {
-      font-size: 1rem;
-      padding-right: 2em;
-      padding-top: 7em;
-    }
-    .hamburger::before,
-    .hamburger::after,
-    .hamburger {
-      width: 1.5rem;
-      height: 2px;
-      border-radius: .5em;
-      top: -15px;
-  }
-  .hamburger::before {top: -4px;}
-  .hamburger::after {top: 4px;}
-
-  .nav-open .hamburger::before {
-    transform: rotate(90deg) translateX(4px);
-  }
+  @media only screen and (max-device-width: 485px) and (max-device-height: 926px) {
 
     #landing_image {
       width: 0 auto;
-      height: 35vh;
+      height: 40vh;
+      overflow-x: hidden;
     }
+
+    .landing-image {
+      width: 140vw;
+      left: -10em;
+    }
+
+    .steam {
+      top: 6em;
+      right: -14em;
+    }
+
+    #about_me {
+      margin-top: 0.5em;
+      padding: 0.5em 1em;
+    }
+
     .hero-blurb {
-      font-size: 1.2rem;
+      font-size: 1.6rem;
       margin: 0 auto;
       padding: .5em
     }
 
     .tile {
-      font-size: .6rem;
-      width: 90%;
-      height: auto;
+      margin: 2em auto;
+      max-width: 80vw;
     }
 
     .right-tile-heading,
@@ -505,11 +482,27 @@ text-align: right;
     }
     
     #projects {
-      display: flex;
-      flex-wrap: wrap;
-      padding: 0.5em 2em;
+      display: block;
+    }
+
+    .project-btn {
+      font-size: 2rem;
+    }
+
+    .coming-soon-banner {
+      height: 350px;
+      width: 100%;
+      align-self: center;
+    }
+
+    .scroll {
+      opacity: 1;
+    }
+    .scrolled {
+      animation: none !important;
     }
   }
+
 
   /*scroll animation*/
 
@@ -536,12 +529,5 @@ text-align: right;
     }
   }
 
-  @media (prefers-reduced-motion) {
-    .scroll {
-      opacity: 1;
-    }
-    .scrolled {
-      animation: none !important;
-    }
-  }
+
 
